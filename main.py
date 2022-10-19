@@ -7,6 +7,12 @@ app = ApplicationBuilder().token("5795904473:AAHCz4RlkGOrGKMbZfO76m8k_SndCHe2FYE
 
 
 app.add_handler(CommandHandler("hello", hello_command))
+app.add_handler(CommandHandler("sum", sum_command))
+app.add_handler(CommandHandler("help", help_command))
+app.add_handler(CommandHandler("subtraction", subtraction_command))
+app.add_handler(CommandHandler("mult", mult_command))
+app.add_handler(CommandHandler("div", div_command))
+
 
 print('server start')
 app.run_polling()
